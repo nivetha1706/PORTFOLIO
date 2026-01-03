@@ -1,8 +1,6 @@
 import type { Metadata } from 'next'
 
 import { Analytics } from '@vercel/analytics/next'
-import { SpeedInsights } from "@vercel/speed-insights/next"
-// Vercel Deployment Trigger
 import './globals.css'
 
 import { Geist_Mono, Inter as V0_Font_Inter, Geist_Mono as V0_Font_Geist_Mono, Source_Serif_4 as V0_Font_Source_Serif_4 } from 'next/font/google'
@@ -47,7 +45,6 @@ export default function RootLayout({
       <body className={`font-sans antialiased`}>
         {children}
         <Analytics />
-        <SpeedInsights />
       </body>
     </html>
   )
